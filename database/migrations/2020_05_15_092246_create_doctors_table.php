@@ -25,6 +25,7 @@ class CreateDoctorsTable extends Migration
             $table->longText('description');
             $table->integer('total_rates');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
